@@ -3,6 +3,8 @@ spring:
     name: client
   cloud:
     config:
+      name: neo-config
+      profile: dev
       uri: http://localhost:8880/
       label: master
-      profile: dev
+      fail-fast: true
